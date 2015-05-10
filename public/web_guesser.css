@@ -1,0 +1,44 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+html {
+  border: 1.5em solid white;
+}
+
+body {
+  background-image: url(http://www.skylinetradeshowtips.com/wp-content/uploads/2014/08/nuance-of-numbers.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgb(68,76,61);
+}
+
+h1 {
+  position: relative;
+  top: 30%;
+  font: bold 300% "Lobster", serif;
+  color: rgb(30,40,60);
+  text-align: center;
+}
+
+form {
+  position: relative;
+  top: 30%;
+  padding-left: 40%;
+}
+
+#empty-box {
+  width: 20%;
+  text-align: center;
+  font: bold 1.5em "Lobster", serif;
+  color: rgb(68,76,61);
+  border: 3px solid;
+  background-color: whitesmoke;
+  border-radius: .5em;
+}
+
+#submit-click-box {
+  font: bold 1.5em "Lobster", serif;
+  color: rgb(68,76,61);
+  border: 3px solid;
+  border-radius: .5em;
+}
