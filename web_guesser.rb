@@ -4,15 +4,15 @@ require 'sinatra/reloader'
 random_number = rand(50)
 
 get '/' do
-  guess = params["guess"]
+  guess   = params["guess"]
   message = guess_checker(guess, random_number)
-  erb :index, :locals => {:message => message}
+  erb     :index, :locals => {:message => message}
 end
 
 def guess_checker(guess, random_number)
-  return "Guess a number from 0 to 50" unless guess != nil
+  return "Guess a number from 0 to 50" if guess == nil
   guess = guess.to_i
-    if guess - random_number > 5
+    if    guess - random_number > 5
       "Way too high!"
     elsif random_number < guess
       "Too high"
@@ -21,6 +21,6 @@ def guess_checker(guess, random_number)
     elsif random_number > guess
       "Too low"
     else
-      "Correct! The secret number was #{random_number}"
+      "Correct! You Win!"
     end
 end
