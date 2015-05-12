@@ -21,6 +21,6 @@ def guess_checker(guess, random_number)
     elsif random_number > guess
       "Too low"
     else
-      "Correct! You Win!"
+      "Correct! You Win!!"
     end
 end
