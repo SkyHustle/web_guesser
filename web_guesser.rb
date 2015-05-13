@@ -22,5 +22,6 @@ def guess_checker(guess, random_number)
       "Too low"
     else
       "Correct! You Win!!"
+      # redirect '/'
     end
 end
