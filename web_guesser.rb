@@ -10,18 +10,17 @@ get '/' do
 end
 
 def guess_checker(guess, random_number)
-  return "Guess a number from 0 to 50" if guess == nil
+  return "Guess a number from 0 to 50 Cheat: #{random_number}" if guess == nil
   guess = guess.to_i
     if    guess - random_number > 5
-      "Way too high!"
+      "#{guess} is Way too high!"
     elsif random_number < guess
-      "Too high"
+      "#{guess} is Too high"
     elsif random_number - guess > 5
-      "Way too low"
+      "#{guess} is Way too low"
     elsif random_number > guess
-      "Too low"
+      "#{guess} is Too low"
     else
-      "Correct! You Win!!"
-      # redirect '/'
+      "#{guess} is Correct! You Win!!"
     end
 end
